@@ -1,0 +1,10 @@
+.playonline{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+@media only screen and (max-width: 960px){
+    .playonline{
+        margin-top: 6rem;
+    }
+ }

@@ -1,0 +1,45 @@
+.myContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+h3,h5,p{
+    font-family: yekan;
+    padding-right: 0.4rem;
+}
+
+.musicBox{
+    box-shadow: 0 0 10px #dee2e6;
+    border-radius: 0.5rem;
+    transition: all 300ms ease-in;
+  }
+  .musicBox:hover{
+    transform: scale(1.03);
+  }
+  .musicBox:hover img{
+    filter: blur(2px);
+  }
+  .musicBox:hover .myPlayIcon{
+    display: block !important;
+  }
+
+@media only screen and (max-width: 960px){
+  .datailContainer{
+    margin-top: 5rem !important;
+}
+  .menuContainer{
+    width: 0 !important;
+  }
+  .datailContainer{
+     width: 100% !important;
+  }
+  .datailContainer1{
+    display: block !important;
+  }
+  .datailContainer2{
+    display: block !important;
+  }
+  .detailBox1,.detailBox2{
+    width: 100% !important;
+  }
+}  

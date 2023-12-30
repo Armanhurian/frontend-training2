@@ -1,0 +1,90 @@
+
+<div class="myMenu" >
+
+  
+    <div class="menuBox">
+     <div>
+        <img class="logoImage"
+        style="display: flex;
+        justify-content: center;
+        margin: 1rem auto;" src="../../assets/logo images/logonomy-1702980855034.jpeg" alt="">
+     </div>
+     <ul  #menuList class="menuList">
+        <li >
+            <a 
+            style="text-align: center;
+            margin: 1rem auto;
+            display: flex;
+            font-size: 1.1rem;
+            justify-content: center;
+            cursor: pointer;"routerLink="/">صفحه اصلی</a>
+        </li>
+        <li >
+            <a style="text-align: center;
+            margin: 1rem auto;
+            display: flex;
+            font-size: 1.1rem;
+            justify-content: center;
+            cursor: pointer;" (click)="scrollToSection()" routerLink="/">لیست جدیدترین آهنگ ها</a>
+        </li>
+        <li >
+            <a style="text-align: center;
+            margin: 1rem auto;
+            display: flex;
+            font-size: 1.1rem;
+            justify-content: center;
+            cursor: pointer;" (click)="clickCategory()">دسته بندی ها</a>
+            <ul  class="categoryList d-none" [ngClass]="{'d-none' : !showCategory}">
+                <li>
+                    <a style="text-align: center;
+            margin: 1rem auto;
+            display: flex;
+            font-size: 1.1rem;
+            justify-content: center;
+            cursor: pointer;" routerLink="/nostalgy-music">نوستالژی</a>
+                </li>
+                <li>
+                    <a style="text-align: center;
+            margin: 1rem auto;
+            display: flex;
+            font-size: 1.1rem;
+            justify-content: center;
+            cursor: pointer;" routerLink="/pop-music">پاپ</a>
+                </li>
+                <li>
+                    <a style="text-align: center;
+            margin: 1rem auto;
+            display: flex;
+            font-size: 1.1rem;
+            justify-content: center;
+            cursor: pointer;" routerLink="/rap-music">رپ</a>
+                </li>
+                <li>
+                    <a style="text-align: center;
+            margin: 1rem auto;
+            display: flex;
+            font-size: 1.1rem;
+            justify-content: center;
+            cursor: pointer;" routerLink="/traditional-music">سنتی</a>
+                </li>
+            </ul>
+        </li>
+        <li >
+            <a style="text-align: center;
+            margin: 1rem auto;
+            display: flex;
+            font-size: 1.1rem;
+            justify-content: center;
+            cursor: pointer;" routerLink="/about-us">درباره ما</a>
+        </li>
+        
+     </ul>  
+     <div (click)="toggleMenu($event)" class="menuIcon">   
+         <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 20 20" fill="none">
+            <path fill="#000000" fill-rule="evenodd" d="M19 4a1 1 0 01-1 1H2a1 1 0 010-2h16a1 1 0 011 1zm0 6a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-1 7a1 1 0 100-2H2a1 1 0 100 2h16z"/>
+         </svg>
+     </div>
+
+
+  </div>
+</div>
