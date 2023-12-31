@@ -1,6 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { DataService } from '../data.service';
 import { Router } from '@angular/router';
+import { PlayService } from '../play.service';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +12,7 @@ export class HomeComponent implements OnInit{
 
   newListMusic ?: any
 
-  constructor(private dataService : DataService ){}
+  constructor(private dataService : DataService , private playService : PlayService){}
 
 
 
@@ -36,6 +37,12 @@ export class HomeComponent implements OnInit{
     console.log(this.newListMusic);
     
     
+  }
+
+  myMusicPlayClick(musicID : any){
+    
+    this.playService.playPauseMusic(musicID)
+
   }
 
 }

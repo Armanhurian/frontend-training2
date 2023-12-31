@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
+import { PlayService } from '../play.service';
 
 @Component({
   selector: 'app-pop-music',
@@ -10,7 +11,7 @@ export class PopMusicComponent implements OnInit{
   popMusic : any = []
   loading ?: boolean 
   
-  constructor(private dataService : DataService){}
+  constructor(private dataService : DataService , private playService : PlayService){}
   
   ngOnInit(): void {
     
@@ -31,5 +32,11 @@ export class PopMusicComponent implements OnInit{
  
     })
     
+  }
+
+  myMusicPlayClick(musicID : any){
+    
+    this.playService.playPauseMusic(musicID)
+
   }
 }
