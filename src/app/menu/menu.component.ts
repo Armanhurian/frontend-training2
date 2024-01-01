@@ -1,5 +1,6 @@
 import { Component, ElementRef, EventEmitter, HostBinding, HostListener, Output, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
+import { SwUpdate } from '@angular/service-worker';
 
 
 
@@ -18,9 +19,26 @@ export class MenuComponent {
 
   isShowMenu : boolean = false
 
+  deferredPrompt ?: any
+
   @ViewChild('menuList') 'menuList' : ElementRef
 
-  constructor(private router : Router){}
+  constructor(private router : Router , private swUpdate: SwUpdate){
+    if (swUpdate.isEnabled) {
+      swUpdate.available.subscribe(() => {
+        if (confirm('یک نسخه جدید از اپلیکیشن در دسترس است. آیا می‌خواهید به‌روزرسانی شود؟')) {
+          window.location.reload();
+        }
+      });
+    }
+
+    window.addEventListener('beforeinstallprompt', (event) => {
+      event.preventDefault();
+      this.deferredPrompt = event;
+  
+    })
+
+  }
 
   scrollToSection() {
     this.scrollToSectionEvent.emit('newList');
@@ -42,6 +60,23 @@ export class MenuComponent {
  }
 
 
+
+
+ installPWA() {
+  if (this.deferredPrompt) {
+    this.deferredPrompt.prompt();
+
+    this.deferredPrompt.userChoice.then((choiceResult : any) => {
+      if (choiceResult.outcome === 'accepted') {
+        console.log('کاربر نصب را قبول کرد');
+      } else {
+        console.log('کاربر نصب را رد کرد');
+      }
+
+      this.deferredPrompt = null;
+    });
+  }
+}
 
 
   clickCategory(){

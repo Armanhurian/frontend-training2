@@ -77,7 +77,14 @@
             justify-content: center;
             cursor: pointer;" routerLink="/about-us">درباره ما</a>
         </li>
-        
+        <li >
+            <a style="text-align: center;
+            margin: 1rem auto;
+            display: flex;
+            font-size: 1.1rem;
+            justify-content: center;
+            cursor: pointer;" (click)="installPWA()" >نصب اپلیکیشن</a>
+        </li>
      </ul>  
      <div (click)="toggleMenu($event)" class="menuIcon">   
          <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 20 20" fill="none">
