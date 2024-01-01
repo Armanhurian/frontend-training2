@@ -7,6 +7,22 @@
     margin-left: 13rem;
     line-height: 2.5rem;
     margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+.about-us-container-title{
+    position: relative;
+    margin-right: 2rem;
+}
+.about-us-container-title::before{
+ content: '';
+ position: absolute;
+ top: 0.5rem;
+ right: -2rem;
+ width: 20px;
+ height: 20px;
+ border-radius: 0.2rem;
+ background-color: rgb(76, 76, 225);
+ transform: rotate(135deg);
 }
 @media only screen and (max-width: 960px){
     .about-us-container{

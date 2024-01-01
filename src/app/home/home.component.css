@@ -22,6 +22,12 @@ h3,h5,p{
   .musicBox:hover .myPlayIcon{
     display: block !important;
   }
+  .myTitleOfNewSong{
+    font-family: yekan;
+    position: relative;
+    border-bottom: 2px solid rgba(38, 135, 38, 0.863);width: 14rem;padding-bottom: 0.5rem; margin-bottom: 2rem;
+  }
+
 
 @media only screen and (max-width: 960px){
   .datailContainer{
