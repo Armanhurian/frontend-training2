@@ -12,8 +12,20 @@ export class PlayService {
 
   srcMusic ?: string
 
+  nameOfMusic ?: string
+
+  nameOfCreator ?: string
+
+  srcOfImage ?: string
+
 
   srcURL = new Subject<{title : any}>()
+
+  songname = new Subject<{title : any}>()
+
+  creatorname = new Subject<{title : any}>()
+
+  imgsrc = new Subject<{title : any}>()
 
   constructor(private route :ActivatedRoute , private dataService : DataService) { }
 
@@ -34,8 +46,19 @@ export class PlayService {
       this.playMusic = filteredArray
 
       this.srcMusic = this.playMusic[0]['src']
+      this.nameOfMusic = this.playMusic[0]['title']
+      this.nameOfCreator = this.playMusic[0]['creator']
+      this.srcOfImage = this.playMusic[0]['image']
+
+
+      console.log(this.srcOfImage?.slice(17,this.srcOfImage.length));
+      
+      
       
       this.srcURL.next({title : this.srcMusic}) 
+      this.songname.next({title : this.nameOfMusic}) 
+      this.creatorname.next({title : this.nameOfCreator}) 
+      this.imgsrc.next({title : this.srcOfImage?.slice(17,this.srcOfImage.length)}) 
       
   
     })

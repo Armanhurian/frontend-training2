@@ -5,6 +5,7 @@ a{
     font-family: yekan;
     color: black;
     text-decoration: none;
+    padding: 0.3rem 0 ;
 }
 
 a:hover{
@@ -20,7 +21,7 @@ a:hover{
     border-radius: 0.3rem;
 }
 .active{
-    background-color: tomato;
+    background-color: rgb(71, 145, 255);
     color: white;
 }
 
@@ -65,6 +66,7 @@ a:hover{
     
   a{
     font-size: 0.9rem !important;
+    padding: 0;
   }
 }
 

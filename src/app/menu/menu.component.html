@@ -17,7 +17,7 @@
             display: flex;
             font-size: 1.1rem;
             justify-content: center;
-            cursor: pointer;"routerLink="/" >صفحه اصلی</a>
+            cursor: pointer;"routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact : true}">صفحه اصلی</a>
         </li>
         <li >
             <a style="text-align: center;
@@ -41,7 +41,7 @@
             display: flex;
             font-size: 1.1rem;
             justify-content: center;
-            cursor: pointer;" routerLink="/nostalgy-music">نوستالژی</a>
+            cursor: pointer;" routerLink="/category-music/نوستالژی" routerLinkActive="active">نوستالژی</a>
                 </li>
                 <li>
                     <a style="text-align: center;
@@ -49,7 +49,7 @@
             display: flex;
             font-size: 1.1rem;
             justify-content: center;
-            cursor: pointer;" routerLink="/pop-music">پاپ</a>
+            cursor: pointer;" routerLink="/category-music/پاپ" routerLinkActive="active">پاپ</a>
                 </li>
                 <li>
                     <a style="text-align: center;
@@ -57,7 +57,7 @@
             display: flex;
             font-size: 1.1rem;
             justify-content: center;
-            cursor: pointer;" routerLink="/rap-music">رپ</a>
+            cursor: pointer;" routerLink="/category-music/رپ" routerLinkActive="active">رپ</a>
                 </li>
                 <li>
                     <a style="text-align: center;
@@ -65,7 +65,7 @@
             display: flex;
             font-size: 1.1rem;
             justify-content: center;
-            cursor: pointer;" routerLink="/traditional-music">سنتی</a>
+            cursor: pointer;" routerLink="/category-music/سنتی" routerLinkActive="active">سنتی</a>
                 </li>
             </ul>
         </li>
@@ -75,15 +75,21 @@
             display: flex;
             font-size: 1.1rem;
             justify-content: center;
-            cursor: pointer;" routerLink="/about-us">درباره ما</a>
+            cursor: pointer;" routerLink="/about-us" routerLinkActive="active">درباره ما</a>
         </li>
         <li >
-            <a style="text-align: center;
-            margin: 1rem auto;
+            <div style="text-align: center;
+            margin: 1.5rem auto;
+            background-color: rgb(31, 160, 104);
+            color: white;
+            border-radius: 0.5rem;
+            font-family: yekan;
+            padding: 0.7rem 0;
             display: flex;
-            font-size: 1.1rem;
+            font-size: 1.3rem;
             justify-content: center;
-            cursor: pointer;" (click)="installPWA()" >نصب اپلیکیشن</a>
+            align-items: center;
+            cursor: pointer;" (click)="installPWA()" >نصب اپلیکیشن</div>
         </li>
      </ul>  
      <div (click)="toggleMenu($event)" class="menuIcon">   

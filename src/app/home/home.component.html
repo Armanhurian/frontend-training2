@@ -7,7 +7,7 @@
             <div class="detailBox1 w-50">
                 <div style="height: 25rem;">
 
-                    <div style="width: 100%; height: 100%;" class="ih-item square effect3 bottom_to_top"><a routerLink="/nostalgy-music">
+                    <div style="width: 100%; height: 100%;" class="ih-item square effect3 bottom_to_top"><a routerLink="/category-music/نوستالژی">
                         <div class="img"><img style="height: 25rem;" src="../../assets/images/1360s_blog_ir.jpg" alt="img"></div>
                         <div class="info">
                           <h3>نوستالژی</h3>
@@ -19,7 +19,7 @@
             <div class="detailBox1 w-50">
                 <div style="height: 25rem;">
 
-                    <div style="width: 100%; height: 100%;" class="ih-item square effect3 bottom_to_top"><a routerLink="/pop-music">
+                    <div style="width: 100%; height: 100%;" class="ih-item square effect3 bottom_to_top"><a routerLink="/category-music/پاپ">
                         <div class="img"><img style="height: 25rem;" src="../../assets/images/Persian-Pop-2.jpg" alt="img"></div>
                         <div class="info">
                           <h3>پاپ</h3>
@@ -33,7 +33,7 @@
             <div class="detailBox2 w-50">
                 <div style="height: 25rem;">
 
-                    <div style="width: 100%; height: 100%;" class="ih-item square effect3 bottom_to_top"><a routerLink="/traditional-music">
+                    <div style="width: 100%; height: 100%;" class="ih-item square effect3 bottom_to_top"><a routerLink="/category-music/سنتی">
                         <div class="img"><img style="height: 25rem;" src="../../assets/images/ac-image-5n1646245470pt.jpeg" alt="img"></div>
                         <div class="info">
                           <h3>سنتی</h3>
@@ -44,7 +44,7 @@
             <div class="detailBox2 w-50">
                 <div style="height: 25rem;">
 
-                    <div style="width: 100%; height: 100%;" class="ih-item square effect3 bottom_to_top"><a routerLink="/rap-music">
+                    <div style="width: 100%; height: 100%;" class="ih-item square effect3 bottom_to_top"><a routerLink="/category-music/رپ">
                         <div class="img"><img style="height: 25rem;" src="../../assets/images/remix-rap.jpg" alt="img"></div>
                         <div class="info">
                           <h3>رپ</h3>
@@ -59,8 +59,12 @@
             <h2 class="myTitleOfNewSong">جدیدترین آهنگ ها</h2>
             <div #newList id="newList" class="myContainer" >
                 <div class="musicBox" (click)="myMusicPlayClick(music.id)" *ngFor="let music of newListMusic">
-                    <svg class="myPlayIcon" style="position: absolute;left:6rem;top:6rem;display:none; width:2rem;z-index:70;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M480 0c-3.25 0-6.5 .4896-9.625 1.49l-304 96.01C153.1 101.8 144 114 144 128v235.1c-15-7.375-31.38-11.12-48-11.12C42.1 352 0 387.8 0 432S42.1 512 95.1 512c49.38 0 89.5-31.12 94.88-71.13c.75-2.75 1.123-5.95 1.123-8.825L192 256l272-85.88v129c-15-7.375-31.38-11.12-48.01-11.12c-53 0-95.1 35.75-95.1 79.1s42.1 79.1 95.1 79.1c49.38 0 89.51-31.25 95.01-71.13c.625-2.75 .875-5.5 1-8.25V31.99C512 14.36 497.8 0 480 0zM96 464c-28.25 0-48-16.88-48-32s19.75-32 48-32s48 16.88 48 32S124.2 464 96 464zM464 368c0 15.12-19.75 32-48 32s-48-16.88-48-32s19.75-32 48-32S464 352.9 464 368zM464 119.8L192 205.6V139.8l272-85.88V119.8z"/></svg>
-                <img src="../../assets/images/{{music.image}}" alt="" srcset="">
+                    <svg class="myPlayIcon" style="position: absolute;left:6rem;top:1rem;display:none; width:2rem;z-index:70;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="200px" width="200px" version="1.1" id="Layer_1" viewBox="0 0 512 512" xml:space="preserve">
+                        <circle style="fill:#366796;" cx="256" cy="256" r="256"/>
+                        <path style="fill:#273B7A;" d="M166.041,375.282l133.082,133.082c86.643-14.7,158.465-72.923,192.183-151.4L378.649,244.307  L166.041,375.282z"/>
+                        <path style="fill:#FDE085;" d="M189.745,133.454l183.025,105.67c12.991,7.501,12.991,26.252,0,33.751l-183.025,105.67  c-12.991,7.501-29.229-1.876-29.229-16.875V150.331C160.516,135.33,176.755,125.954,189.745,133.454z"/>
+                        <path style="fill:#FFC91B;" d="M160.516,256.862V361.67c0,15.001,16.239,24.376,29.229,16.875l183.025-105.67  c6.211-3.586,9.418-9.743,9.69-16.013H160.516z"/>
+                        </svg>                <img class="imageOFnewSong" src="../{{music.image}}" alt="" srcset="">
                 <h3>{{music.creator}}</h3>
                 <h5>{{music.title}}</h5>
                 <p>{{music.type}}</p>

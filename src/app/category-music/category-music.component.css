@@ -1,3 +1,19 @@
+.category-container-title{
+    position: relative;
+    margin-right: 2rem;
+    font-family: yekan;
+}
+.category-container-title::before{
+ content: '';
+ position: absolute;
+ top: 0.5rem;
+ right: -2rem;
+ width: 20px;
+ height: 20px;
+ border-radius: 0.2rem;
+ background-color: rgb(76, 76, 225);
+ transform: rotate(135deg);
+}
 .spinner-4 {
     width: 50px;
     --b: 8px; /* the border thickness */
@@ -53,7 +69,7 @@
   }
 
   @media only screen and (max-width: 960px){
-    .container{  
-      margin-top: 6rem;
+    .myBox{
+        margin-top: 6rem;
     }
  }

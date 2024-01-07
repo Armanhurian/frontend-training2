@@ -7,7 +7,10 @@ h3,h5,p{
     font-family: yekan;
     padding-right: 0.4rem;
 }
-
+.imageOFnewSong{
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
 .musicBox{
     box-shadow: 0 0 10px #dee2e6;
     border-radius: 0.5rem;

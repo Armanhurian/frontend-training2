@@ -30,11 +30,14 @@ export class DataService {
     {id : 18 , type : 'رپ' , title : 'خواب راحت' , creator : 'حصین و بیداد' , image : '../assets/images/download (7).jfif', src : 'https://xx.venusmusic.ir/archive/H/Ho3ein/Single/Ho3ein%20Ft%20Bidad%20-%20Khaabe%20Rahat.mp3' },
     {id : 19 , type : 'رپ' , title : 'نیلوفر آبی' , creator : 'رضا پیشرو' , image : '../assets/images/reza_pishro_niloofare_abi.jpg.webp', src : 'https://dl.melusic.ir/music/Reza Pishro/reza_pishro_niloofare_abi 128.mp3' },
     {id : 20 , type : 'رپ' , title : 'یه روزی' , creator : 'سهراب ام جی' , image : '../assets/images/یه-روزی-از-سهراب-ام-جی.jpg', src : 'https://dl.cactusmusic.ir/2021/03/YeRoozi2.mp3' },
-    {id : 21 , type : 'جدیدترین ها' , title : 'یاغی' , creator : 'سهراب پاکزاد' , image : 'download (9).jfif', src : 'https://irsv.upmusics.com/AliBZ/Sohrab%20Pakzad%20-%20Yaghi%20(320).mp3' },
-    {id : 22 , type : 'جدیدترین ها' , title : 'بیشتر از عشق' , creator : 'رضا صادقی', image : 'download (10).jfif', src : 'https://dl.rozmusic.com/Music/1402/09/30/Reza%20Sadeghi%20-%20Bishtar%20Az%20Eshgh%20%28128%29.mp3' },
-    {id : 23 , type : 'جدیدترین ها' , title : 'در هوایت' , creator : 'محمد اصفهانی' , image : 'download (11).jfif', src : 'https://dl.musicfile.ir/Music/1402/9/Mohammad%20Esfahani%20-%20Dar%20Havayat%20%28128%29.mp3' },
-    {id : 24 , type : 'جدیدترین ها' , title : 'نگاه آخر' , creator : 'مهدی جهانی' , image : 'download (12).jfif', src : 'https://irsv.upmusics.com/AliBZ/Mehdi%20Jahani%20%7C%20Negahe%20Akhar%20(320).mp3' },
-    {id : 25 , type : 'جدیدترین ها' , title : 'همه رو جواب کردم' , creator : 'مسعود صادقلو' , image : 'download (13).jfif', src : 'https://dl.rozmusic.com/Music/1402/09/29/Masoud%20Sadeghloo%20-%20Hamaro%20Javab%20Kardam%20%28128%29.mp3' },
+    {id : 21 , type : 'جدیدترین ها' , title : 'یاغی' , creator : 'سهراب پاکزاد' , image : '../assets/images/download (9).jfif', src : 'https://irsv.upmusics.com/AliBZ/Sohrab%20Pakzad%20-%20Yaghi%20(320).mp3' },
+    {id : 22 , type : 'جدیدترین ها' , title : 'بیشتر از عشق' , creator : 'رضا صادقی', image : '../assets/images/download (10).jfif', src : 'https://dl.rozmusic.com/Music/1402/09/30/Reza%20Sadeghi%20-%20Bishtar%20Az%20Eshgh%20%28128%29.mp3' },
+    {id : 23 , type : 'جدیدترین ها' , title : 'در هوایت' , creator : 'محمد اصفهانی' , image : '../assets/images/download (11).jfif', src : 'https://dl.musicfile.ir/Music/1402/9/Mohammad%20Esfahani%20-%20Dar%20Havayat%20%28128%29.mp3' },
+    {id : 24 , type : 'جدیدترین ها' , title : 'نگاه آخر' , creator : 'مهدی جهانی' , image : '../assets/images/download (12).jfif', src : 'https://irsv.upmusics.com/AliBZ/Mehdi%20Jahani%20%7C%20Negahe%20Akhar%20(320).mp3' },
+    {id : 25 , type : 'جدیدترین ها' , title : 'همه رو جواب کردم' , creator : 'مسعود صادقلو' , image : '../assets/images/download (13).jfif', src : 'https://dl.rozmusic.com/Music/1402/09/29/Masoud%20Sadeghloo%20-%20Hamaro%20Javab%20Kardam%20%28128%29.mp3' },
+    {id : 26 , type : 'جدیدترین ها' , title : 'کی مثل من ' , creator : 'یونا' , image : '../assets/images/download (14).jfif', src : 'https://dl.musicfile.ir/Music/1402/10/Youna%20-%20Ki%20Mesle%20Man%20%28128%29.mp3' },
+    {id : 27 , type : 'جدیدترین ها' , title : 'دوست دارم' , creator : 'مجید رضوی' , image : '../assets/images/download (15).jfif', src : 'https://dl.rozmusic.com/Music/1402/10/15/Majid%20Razavi%20-%20Dooset%20Daram%20%28128%29.mp3' },
+    {id : 28 , type : 'جدیدترین ها' , title : 'زدم بیرون' , creator : 'دکاموند و  زانیار خسروی' , image : '../assets/images/download (16).jfif', src : 'https://dl.solahangs.com/Music/1402/10/D/128/Dekamond%20%26%20Xaniar%20-%20Zadam%20Biroon%20%28128%29.mp3' },
   ]
 
   apiUrl = 'https://6582b58c02f747c83679f8ee.mockapi.io/musicApi/v3/musics'

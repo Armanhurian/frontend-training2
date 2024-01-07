@@ -15,6 +15,12 @@ export class AppComponent implements OnInit{
 
   src ?: any 
 
+  songName ?: any
+
+  creatorName ?: any
+
+  imageSrc ?: any
+
   @ViewChild('audioPlayer') 'audioPlayer' : ElementRef
 
   constructor(private route : ActivatedRoute, private dataService : DataService , private playService : PlayService){}
@@ -26,6 +32,24 @@ export class AppComponent implements OnInit{
     this.playService.srcURL.subscribe((item)=>{
       if(item.title){
         this.src = item.title
+      }
+    })
+
+    this.playService.songname.subscribe((item)=>{
+      if(item.title){
+        this.songName = item.title
+      }
+    })
+
+    this.playService.creatorname.subscribe((item)=>{
+      if(item.title){
+        this.creatorName = item.title
+      }
+    })
+
+    this.playService.imgsrc.subscribe((item)=>{
+      if(item.title){
+        this.imageSrc = item.title
       }
     })
     
